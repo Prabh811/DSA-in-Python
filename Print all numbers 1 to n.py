@@ -1,4 +1,4 @@
-user_input = int(input("Enter a number and this program will print from 1 to n: "))
+# user_input = int(input("Enter a number and this program will print from 1 to n: "))
 
 # Using for loop
 
@@ -18,4 +18,20 @@ user_input = int(input("Enter a number and this program will print from 1 to n: 
 #         i += 1
 # except Exception as e:
 #     print(e)
+
+
+
+def main():
+    try:
+        user_input = int(input("Enter Integer number so this program can print from 1 to n: "))
         
+        i = 1
+        while(i <= user_input):
+            print(i, end=" ")
+            i += 1
+        
+    except Exception as e:
+        print("Kindly give integer number.")
+
+if __name__ == "__main__":
+    main()
